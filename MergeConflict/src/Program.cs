@@ -4,10 +4,10 @@
     {
         Console.WriteLine("Goodbye World");
         double[] arr = [1.0, 2.0, 4.0];
-        Console.WriteLine("Avg value: " + avgValue(arr));
+        Console.WriteLine("Avg value: " + sumValues(arr));
     }
 
-    public static double avgValue(double[] arr)
+    public static double sumValues(double[] arr)
     {
         double sum = 0.0;
         foreach (double numb in arr)
@@ -15,6 +15,6 @@
             sum += numb;
         }
         
-        return sum / arr.Length;
+        return sum;
     }
 }
